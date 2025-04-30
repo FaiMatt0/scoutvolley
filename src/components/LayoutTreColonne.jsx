@@ -1,7 +1,7 @@
 // src/components/LayoutTreColonne.jsx
 import React from 'react';
 
-const LayoutTreColonne = ({ ruolo, squadra, centro, sinistra, destra }) => {
+const LayoutTreColonne = ({ centro, sinistra, destra }) => {
   return (
     <div className="flex min-h-screen bg-gray-900 text-white">
       {/* Colonna sinistra */}
@@ -11,12 +11,6 @@ const LayoutTreColonne = ({ ruolo, squadra, centro, sinistra, destra }) => {
 
       {/* Colonna centrale */}
       <div className="flex-1 p-4">
-        <div className="flex justify-between items-center mb-4">
-          <div className="bg-gray-700 px-4 py-2 rounded">Ruolo: {ruolo}</div>
-          <div className="bg-gray-700 px-4 py-2 rounded">
-            Squadra: {squadra}
-          </div>
-        </div>
         {centro}
       </div>
 

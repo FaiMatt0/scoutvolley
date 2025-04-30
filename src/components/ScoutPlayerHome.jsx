@@ -65,7 +65,7 @@ const ScoutPlayerHome = ({ user, partite }) => {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6 flex flex-col items-center justify-start gap-6 relative overflow-hidden">
       {/* Background stilizzato */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/volley-diagram.png')] bg-no-repeat bg-center bg-contain pointer-events-none" />
+      <div className="absolute inset-0 opacity-10 bg-gray-800 bg-no-repeat bg-center bg-contain pointer-events-none" />
 
       <h2 className="text-3xl font-extrabold text-pink-500 text-center z-10">
         🏐 Benvenuto, {numeroGiocatore}
@@ -74,7 +74,7 @@ const ScoutPlayerHome = ({ user, partite }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 z-10 w-full max-w-3xl">
         <button
           onClick={() => setStatsType('personali')}
-          className="bg-pink-700/80 hover:bg-pink-600/90 rounded-2xl p-6 text-xl font-semibold flex flex-col items-center justify-center gap-3 shadow-lg backdrop-blur-md transition"
+          className="bg-pink-700 hover:bg-pink-600 rounded-2xl p-6 text-xl font-semibold flex flex-col items-center justify-center gap-3 shadow-lg transition"
         >
           <span className="text-5xl">👤</span>
           Statistiche Personali
@@ -82,7 +82,7 @@ const ScoutPlayerHome = ({ user, partite }) => {
 
         <button
           onClick={() => setStatsType('squadra')}
-          className="bg-pink-700/80 hover:bg-pink-600/90 rounded-2xl p-6 text-xl font-semibold flex flex-col items-center justify-center gap-3 shadow-lg backdrop-blur-md transition"
+          className="bg-pink-700 hover:bg-pink-600 rounded-2xl p-6 text-xl font-semibold flex flex-col items-center justify-center gap-3 shadow-lg transition"
         >
           <span className="text-5xl">👥</span>
           Statistiche Squadra

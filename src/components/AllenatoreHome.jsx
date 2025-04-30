@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import GestioneSquadra from './GestioneSquadra';
 import TeamStats from './TeamStats';
 
-const AllenatoreHome = () => {
+const AllenatoreHome = ({ squadra }) => {
   const [pagina, setPagina] = useState('home');
 
   return (
     <div className="p-4 text-white">
       <div className="flex justify-between mb-4">
         <div className="bg-gray-800 px-4 py-2 rounded">Ruolo: Allenatore</div>
-        <select className="bg-gray-800 px-4 py-2 rounded">
+        <select className="bg-gray-800 px-4 py-2 rounded" defaultValue={squadra}>
           <option>Squadra A</option>
           <option>Squadra B</option>
         </select>
